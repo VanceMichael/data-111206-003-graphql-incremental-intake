@@ -1,0 +1,82 @@
+[
+  {
+    "data": {
+      "company": {
+        "id": "园区企业甲",
+        "name": "合成智造",
+        "contacts": []
+      }
+    },
+    "pending": [
+      {
+        "id": "cert",
+        "path": [
+          "company"
+        ]
+      },
+      {
+        "id": "people",
+        "path": [
+          "company",
+          "contacts"
+        ]
+      }
+    ],
+    "hasNext": true
+  },
+  {
+    "incremental": [
+      {
+        "id": "people",
+        "items": [
+          {
+            "name": "虚构联系人乙"
+          }
+        ],
+        "subPath": [
+          1
+        ]
+      }
+    ],
+    "hasNext": true
+  },
+  {
+    "incremental": [
+      {
+        "id": "cert",
+        "data": {
+          "certificates": [
+            "合成资质"
+          ]
+        }
+      }
+    ],
+    "completed": [
+      {
+        "id": "cert"
+      }
+    ],
+    "hasNext": true
+  },
+  {
+    "incremental": [
+      {
+        "id": "people",
+        "items": [
+          {
+            "name": "虚构联系人甲"
+          }
+        ],
+        "subPath": [
+          0
+        ]
+      }
+    ],
+    "completed": [
+      {
+        "id": "people"
+      }
+    ],
+    "hasNext": false
+  }
+]

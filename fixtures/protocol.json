@@ -1,0 +1,19 @@
+{
+  "boundary": "trade-mixed-42",
+  "pending": "id 与 path 登记延迟分支",
+  "incremental": "data 合并对象；items 用 subPath 指定分支下列表位置",
+  "completed": "关闭已登记分支，可带 errors",
+  "hasNext": "false 表示整个响应终止，尚有未关闭分支时仍不完整",
+  "max_body_bytes": 1048576,
+  "max_part_bytes": 65536,
+  "required_paths": [
+    [
+      "company",
+      "id"
+    ],
+    [
+      "company",
+      "certificates"
+    ]
+  ]
+}
